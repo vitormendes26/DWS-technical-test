@@ -4,7 +4,7 @@ Technical backend test for DWS Brazil.
 
 ## General Set Up
 
-1: "First, you should run the Maven commands mvn clean and mvn install." Obs: Don't forget to configure lombok plugin-
+1: "First, you should run the Maven commands mvn clean and mvn install." Obs: Don't forget to configure lombok plugin
 
 2: Navigate to the root directory of the project and run docker-compose up.
 
@@ -40,10 +40,11 @@ Technical backend test for DWS Brazil.
       └── 📄 pom.xml
 ```
 
-## **Composição**
+## **Composition**
 
 - [x] [Java 21](https://docs.oracle.com/en/java/javase/21/)
 - [x] [Springboot 3](https://spring.io/projects/spring-boot)
+- [x] [redis](https://redis.io/)
 
 ##  Setting Up Postman Requests for All Created Endpoints
 
