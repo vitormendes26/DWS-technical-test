@@ -2,7 +2,8 @@ package com.dws.isobar.fm.bands.api.handler;
 
 import com.dws.isobar.fm.bands.domain.exception.BandNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
@@ -12,9 +13,10 @@ import org.springframework.web.method.annotation.MethodArgumentTypeMismatchExcep
 
 import java.time.LocalDateTime;
 
-@Slf4j
 @RestControllerAdvice
 public class ApiHandlerException {
+
+    private static final Logger log = LoggerFactory.getLogger(ApiHandlerException.class);
 
     @ExceptionHandler(value = MethodArgumentNotValidException.class)
     public ResponseEntity<ErrorResponseDTO> handleInvalidParameterValue(MethodArgumentNotValidException ex, HttpServletRequest request) {
