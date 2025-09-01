@@ -4,11 +4,13 @@ Technical backend test for DWS Brazil.
 
 ## General Set Up
 
-1: Navigate to the root directory of the project and run docker-compose up.
+1: "First, you should run the Maven commands mvn clean and mvn install." Obs: Don't forget to configure lombok plugin-
 
-2: After the containers are up and running, launch the application by executing the BandsApplication class.
+2: Navigate to the root directory of the project and run docker-compose up.
 
-3: Swagger UI = http://localhost:8080
+3: After the containers are up and running, launch the application by executing the BandsApplication class.
+
+4: Swagger UI = http://localhost:8080
 
 ## **Project folder structure**
 
